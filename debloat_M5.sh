@@ -1,6 +1,7 @@
 #!/bin/bash
 
 pkgs=(
+com.google.android.gm
 com.google.android.youtube
 com.google.android.ext.services
 com.google.android.googlequicksearchbox
