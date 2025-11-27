@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# GOOGLE REMOVE
 pkgs=(
 com.google.android.youtube
 com.google.android.ext.services
@@ -17,7 +16,6 @@ com.google.android.apps.docs
 com.google.android.apps.maps
 com.google.android.webview
 com.google.android.syncadapters.contacts
-com.google.android.packageinstaller
 com.google.android.gms
 com.google.android.gsf
 com.google.android.tts
@@ -30,7 +28,6 @@ com.google.android.syncadapters.calendar
 com.google.android.setupwizard
 )
 
-# HUAWEI TELEMETRY / BLOAT
 pkgs+=(
 com.huawei.hidisk
 com.huawei.hiview
@@ -68,7 +65,6 @@ com.huawei.hifolder
 com.huawei.hwdetectrepair
 )
 
-# THIRD PARTY BLOAT
 pkgs+=(
 com.facebook.services
 com.facebook.system
@@ -80,7 +76,6 @@ com.android.partnerbrowsercustomizations.tmobile
 com.example.android.notepad
 )
 
-# EXECUTE
 for pkg in "${pkgs[@]}"; do
     adb shell pm disable-user --user 0 "$pkg"
 done
