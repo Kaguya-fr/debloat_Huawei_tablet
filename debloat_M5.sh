@@ -30,7 +30,6 @@ com.google.android.setupwizard
 )
 
 pkgs+=(
-com.huawei.hidisk
 com.huawei.hiview
 com.huawei.iaware
 com.huawei.android.thememanager
